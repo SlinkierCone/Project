@@ -1,0 +1,32 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: gray;
+  }
+  
+  li {
+    float: left;
+    border: 3px solid gray;
+  }
+  
+  li a {
+    display: block;
+    text-align: center;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+#first {
+    background: lightblue;
+  }
+
+  li:hover{
+      border-bottom: 3px solid purple;
+  }
+
+  
