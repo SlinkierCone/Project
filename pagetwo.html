@@ -6,7 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
     <style>
-      ul {
+      #background {
+        margin-top: 4px;
+        background-image: url(/images/arosa2.jpg);
+        height: 280px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      ul.header {
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -15,12 +24,12 @@
         background-color: gray;
       }
 
-      li {
+      ul.header li {
         display: inline-block;
         border: 3px solid gray;
       }
 
-      li a {
+      ul.header li a {
         display: block;
         text-align: center;
         padding: 10px 30px;
@@ -37,27 +46,174 @@
         border-bottom: 3px solid purple;
       }
 
-      iframe {
-        float: right;
-      }
-      @keyframes ski {
-        from {
-          left: 600px;
-        }
-        to {
-          left: 1200px;
-        }
-      }
-
       #skier {
         position: relative;
         animation: ski 10s infinite;
+      }
+
+      ul.footer li a {
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 12px;
+        display: block;
+        text-align: center;
+        padding: 8px 20px;
+        text-decoration: none;
+        border-left: 1px solid grey;
+        border-top: 3px solid lightgray;
+        border-bottom: 3px solid lightgray;
+      }
+
+      ul.footer li {
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 12px;
+        display: inline-block;
+      }
+
+      ul.footer {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        text-align: center;
+        background-color: lightgray;
+        border-top: 1px solid black;
+      }
+
+      #copyright {
+        padding-right: 15px;
+      }
+
+      #paddingone {
+        height: 10px;
+        float: none;
+      }
+
+      div {
+        float: none;
+      }
+
+      #box {
+        margin-right: auto;
+        margin-left: auto;
+        width: 1000px;
+        padding-top: 10px;
+      }
+
+      h3 {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 30px;
+        top: 50px;
+      }
+
+      #headshot {
+        height: 200px;
+        border-radius: 400px;
+        position: relative;
+        left: 130px;
+        top: 30px;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      .whoami {
+        margin-top: 10px;
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid black;
+        text-align: center;
+      }
+
+      .bodyone {
+        font-family: "Courier New", Courier, monospace;
+        line-height: 1.5;
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .bodytwo {
+        font-family: "Courier New", Courier, monospace;
+        line-height: 1.5;
+        font-size: 13px;
+        text-align: center;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+
+      .headingone {
+        font-family: "Courier New", Courier, monospace;
+        line-height: 1.5;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+      }
+
+      .arosabodyone {
+        border: 1px solid black;
+        height: 400px;
+        width: 395px;
+        float: right;
+        margin-top: 5px;
+      }
+
+      .arosabodytwo {
+        border: 1px solid black;
+        height: 400px;
+        width: 395px;
+        float: left;
+        margin-top: 5px;
+        text-align: center;
+      }
+
+      .arosabox {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 490px;
+      }
+
+      .arosathree {
+        width: 350px;
+        margin-top: 10px;
+      }
+
+      .insidephoto {
+        width: 350px;
+        font-family: "Courier New", Courier, monospace;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      th {
+        width: 175px;
+      }
+
+      .tableone {
+        margin-top: 10px;
+      }
+
+      table {
+        border: 1px solid lightgray;
+        font-size: 12px;
+      }
+
+      caption {
+        color: green;
+        font-size: 15px;
+        text-decoration: underline;
       }
     </style>
   </head>
   <body>
     <div id="headerwidth">
-      <ul>
+      <ul class="header">
         <li id="first"><a href="/index.html">Home</a></li>
         <li><a href="/pagetwo.html">Top Ski Resorts</a></li>
         <li>
@@ -75,12 +231,236 @@
       </ul>
     </div>
 
-    <img
-      src="images/Skier.png"
-      alt="Little Skier"
-      height="30"
-      title="Little Skier"
-      id="skier"
-    />
+    <div id="background">
+      <div id="box">
+        <div class="whoami">
+          <h1>My Current Top 5 Ski Resorts In Switerland!</h1>
+
+          <p class="headingone">
+            This part of the website will break down my favorite ski resorts in
+            Switzerland, providing information on price, location, skiing
+            difficulty, ski area size, and a language breakdown.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="arosabox">
+      <div class="whoami">
+        <h1>#1 Arosa</h1>
+      </div>
+
+      <div class="arosabodytwo">
+        <div><img src="/images/Arosa3.jpeg" alt="" class="arosathree" /></div>
+        <div class="insidephoto">
+          <div>Arosa in Lezerheide, Switzerland</div>
+
+          <div class="tableone"></div>
+
+          <table>
+            <caption>
+              Rating
+            </caption>
+            <tr>
+              <th>Ski Area:</th>
+              <th>225km</th>
+            </tr>
+
+            <tr>
+              <th>Lifts:</th>
+              <th>42</th>
+            </tr>
+
+            <tr>
+              <th>Top Height:</th>
+              <th>2865m</th>
+            </tr>
+
+            <tr>
+              <th>Area Difficulty:</th>
+              <th>4/5</th>
+            </tr>
+
+            <tr>
+              <th>Price:</th>
+              <th>$$</th>
+            </tr>
+
+            <tr>
+              <th>Airport Distance:</th>
+              <th>2 Hours</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="arosabodyone">
+        <p class="bodytwo">
+          Arosa is my favorite ski area in Switzerland. Arosa is a ski area that
+          is not very popular with international tourists. It is more for nearby
+          local swiss residents, meaning it is crowded as other resorts. They
+          also have great food options in restaurants with some of the best
+          views I have ever seen. Nevertheless, this resort is not friendly for
+          beginners but will provide an amazing experience for experienced
+          skiers looking for long slopes, which will allow fast-past carving.
+          The price for multiple days when booking advance is also very modest,
+          and that is not because of lower lift quality as they have some of the
+          newest lifts in Switzerland. Including the fattest gondola in Europe.
+        </p>
+      </div>
+    </div>
+
+    <div class="arosabox">
+      <div class="whoami">
+        <h1>#2 Champéry</h1>
+      </div>
+
+      <div class="arosabodytwo">
+        <div>
+          <img src="/images/Champery1.webp" alt="" class="arosathree" />
+        </div>
+        <div class="insidephoto">
+          <div>Champéry in Vallais, Switzerland</div>
+
+          <div class="tableone"></div>
+
+          <table>
+            <caption>
+              Rating
+            </caption>
+            <tr>
+              <th>Ski Area:</th>
+              <th>600km</th>
+            </tr>
+
+            <tr>
+              <th>Lifts:</th>
+              <th>209</th>
+            </tr>
+
+            <tr>
+              <th>Top Height:</th>
+              <th>2,466m</th>
+            </tr>
+
+            <tr>
+              <th>Area Difficulty:</th>
+              <th>3/5</th>
+            </tr>
+
+            <tr>
+              <th>Price:</th>
+              <th>$$$</th>
+            </tr>
+
+            <tr>
+              <th>Airport Distance:</th>
+              <th>1.5 Hours</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="arosabodyone">
+        <p class="bodytwo">
+          Champéry is where I initially spent most of my younger years learning
+          to ski, and I can say that it has something for everyone. I have been
+          skiing there for ten years have still not skied every slope Champéry
+          is part of the Portes Du Soleil ski area, one of the world's biggest
+          ski areas, as it links 12 different pistes together. Moreover, this
+          resort also shares its Ski Area with France, allowing Skiers to go to
+          France and experience some exceptional cheap food. Champéry provides a
+          great place to learn skiing as the area has over 39 green runs and
+          offers excellent challenges for advanced skiers, such as the Mur
+          Suisse. The Mur Suisse is one of the steepest slopes in Europe. This
+          resort gets popular in the holiday weeks and is not as high as other
+          Swiss ski resorts.
+        </p>
+      </div>
+    </div>
+
+    <div class="arosabox">
+      <div class="whoami">
+        <h1>#3 Zermatt</h1>
+      </div>
+
+      <div class="arosabodytwo">
+        <div>
+          <img src="/images/Zermatt2.jpeg" alt="" class="arosathree" />
+        </div>
+        <div class="insidephoto">
+          <div>Zermatt in Vallais, Switzerland</div>
+
+          <div class="tableone"></div>
+
+          <table>
+            <caption>
+              Rating
+            </caption>
+            <tr>
+              <th>Ski Area:</th>
+              <th>360km</th>
+            </tr>
+
+            <tr>
+              <th>Lifts:</th>
+              <th>54</th>
+            </tr>
+
+            <tr>
+              <th>Top Height:</th>
+              <th>3,899m</th>
+            </tr>
+
+            <tr>
+              <th>Area Difficulty:</th>
+              <th>4/5</th>
+            </tr>
+
+            <tr>
+              <th>Price:</th>
+              <th>$$$$</th>
+            </tr>
+
+            <tr>
+              <th>Airport Distance:</th>
+              <th>2.5 Hours</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="arosabodyone">
+        <p class="bodytwo">
+          Despite the classic cliché, Zermatt is one of the best options in
+          Switzerland. If you are traveling to Switzerland and are looking to
+          get a unique experience, Zermatt does provide a dreamy experience.
+          Being the highest ski area in Switzerland, you will get the white
+          Christmas you are after, with a luxurious touch. Zermatt has luxury
+          VIP gondolas, Michelin star restaurants, and beautiful boutique hotels
+          while also providing exceptional skiing, as they height ensure
+          attractive conditions all year round. Zermatt has no cars as they are
+          banned, providing a refreshing atmosphere. Zermatt currently has the
+          longest run in Europe, which is 20KM long. Zermatt also has a lot of
+          opportunities for people just looking to enjoy the Swiss Alps,
+          including ice skating, tobogganing, curling, and snowing. Did I forget
+          to mention that the resort is also connected to Italy...
+        </p>
+      </div>
+    </div>
+
+    <div id="paddingone"></div>
+
+    <div>
+      <footer>
+        <ul class="footer">
+          <li id="copyright">
+            Copyright&copy; 2022 André. All Rights Reservred
+          </li>
+          <li><a href="/pagetwo.html">Site Map</a></li>
+          <li><a href="/pagetwo.html">Contact Page</a></li>
+          <li><a href="/pagetwo.html">Social Media</a></li>
+        </ul>
+      </footer>
+    </div>
   </body>
 </html>
