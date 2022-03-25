@@ -6,7 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
     <style>
-      ul {
+      #background {
+        margin-top: 4px;
+        background-image: url(/images/Arosa.png);
+        height: 280px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      ul.header {
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -15,12 +24,12 @@
         background-color: gray;
       }
 
-      li {
+      ul.header li {
         display: inline-block;
         border: 3px solid gray;
       }
 
-      li a {
+      ul.header li a {
         display: block;
         text-align: center;
         padding: 10px 30px;
@@ -42,10 +51,12 @@
       }
       @keyframes ski {
         from {
-          left: 600px;
+          top: 120px;
+          left: 80px;
         }
         to {
-          left: 1200px;
+          top: 1200px;
+          left: 80px;
         }
       }
 
@@ -53,11 +64,148 @@
         position: relative;
         animation: ski 10s infinite;
       }
+
+      ul.footer li a {
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 12px;
+        display: block;
+        text-align: center;
+        padding: 8px 20px;
+        text-decoration: none;
+        border-left: 1px solid grey;
+        border-top: 3px solid lightgray;
+        border-bottom: 3px solid lightgray;
+      }
+
+      ul.footer li {
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 12px;
+        display: inline-block;
+      }
+
+      ul.footer {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        text-align: center;
+        background-color: lightgray;
+        border-top: 1px solid black;
+      }
+
+      #copyright {
+        padding-right: 15px;
+      }
+
+      #paddingone {
+        height: 10px;
+        float: none;
+      }
+
+      div {
+        float: none;
+      }
+
+      #box {
+        margin-right: auto;
+        margin-left: auto;
+        width: 1000px;
+        padding-top: 10px;
+      }
+
+      h3 {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 30px;
+        top: 50px;
+      }
+
+      #headshot {
+        height: 200px;
+        border-radius: 400px;
+        position: relative;
+        left: 130px;
+        top: 30px;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      .whoami {
+        margin-top: 10px;
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid black;
+        text-align: center;
+      }
+
+      .bodyone {
+        font-family: "Courier New", Courier, monospace;
+        line-height: 1.5;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      #socialmedia {
+        width: 800px;
+        height: 150px;
+
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #leftsocial {
+        float: left;
+        height: 140px;
+        width: 350px;
+        text-align: right;
+      }
+
+      #rightsocial {
+        float: right;
+        height: 140px;
+        width: 350px;
+        text-align: left;
+      }
+
+      #rightpage {
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      #imgstyle {
+        height: 130px;
+      }
+
+      #imgstyletwo {
+        height: 105px;
+        margin-top: 12px;
+      }
+
+      #feedback{
+        width: 300px;
+        height: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border: 1px dashed black;
+      }
+
+      a{
+        font-family: "Courier New", Courier, monospace;
+        font-size: 25px;
+      }
     </style>
   </head>
   <body>
     <div id="headerwidth">
-      <ul>
+      <ul class="header">
         <li id="first"><a href="/index.html">Home</a></li>
         <li><a href="/pagetwo.html">Top Ski Resorts</a></li>
         <li>
@@ -75,12 +223,52 @@
       </ul>
     </div>
 
-    <img
-      src="images/Skier.png"
-      alt="Little Skier"
-      height="30"
-      title="Little Skier"
-      id="skier"
-    />
+    <div id="background">
+      <div id="box">
+        <div class="whoami">
+          <h1>Contact Page</h1>
+
+          <p class="bodyone">
+            Are you looking to get in contact with me? Maybe you want to go
+            skiing together, share a story, or provide some feedback?
+            <br /><br />
+            <span id="rightpage"> you are on the right page!</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="socialmedia">
+      <div id="leftsocial">
+        <a href="https://www.instagram.com/andre.hensonschnee/"
+          ><img src="/images/insta.webp" alt="" id="imgstyle" />
+        </a>
+      </div>
+      <div id="rightsocial">
+        <a href="mailto:ahensonschnee1@babson.edu"
+          ><img src="/images/mailbox.png" alt="" id="imgstyletwo" />
+        </a>
+      </div>
+    </div>
+
+    <div id="feedback">
+      <a href="/feedbackform.html">Feedback Form</a>
+      
+    </div>
+
+    <div id="paddingone"></div>
+
+    <div>
+      <footer>
+        <ul class="footer">
+          <li id="copyright">
+            Copyright&copy; 2022 André. All Rights Reservred
+          </li>
+          <li><a href="/pagetwo.html">Site Map</a></li>
+          <li><a href="/pagetwo.html">Contact Page</a></li>
+          <li><a href="/pagetwo.html">Social Media</a></li>
+        </ul>
+      </footer>
+    </div>
   </body>
 </html>

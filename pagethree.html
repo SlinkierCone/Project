@@ -8,8 +8,8 @@
     <style>
       #background {
         margin-top: 4px;
-        background-image: url(/images/arosa2.jpg);
-        height: 280px;
+        background-image: url(/images/champery3.jpg);
+        height: 1300px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -99,13 +99,10 @@
         padding-right: 15px;
       }
 
-      
-
       #paddingone {
         height: 10px;
         float: none;
       }
-
 
       div {
         float: none;
@@ -162,6 +159,39 @@
         color: white;
       }
 
+      #form{
+        background-color: lightgray;
+        width: 800px;
+        height: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+      }
+
+      .fieldone{
+        font-family: "Courier New", Courier, monospace;
+        font-size: 20px;
+        margin: 15px;
+
+
+      }
+
+      .space{
+        padding: 10px;
+      }
+
+      .spacetwo{
+        padding: 2px 10px 2px 10px;
+      }
+
+      #divbreak{
+        width: 800px;
+        height: 40px;
+        background-color: white;
+        margin: 20px;
+        margin-left: auto;
+        margin-right: auto;
+      }
     </style>
   </head>
   <body>
@@ -183,24 +213,213 @@
         </li>
       </ul>
     </div>
-   
+
     <div id="background">
       <div id="box">
         <div class="whoami">
-          <h1>My Current Top 5 Ski Resorts In Switerland!</h1>
+          <h1>Swiss Ski Resort Survey</h1>
 
           <p class="headingone">
-            This part of the website will break down my favorite ski resorts in
-            Switzerland, providing information on price, location, skiing
-            difficulty, ski area size, and a language breakdown.
+            Everyone has different experiences when going to Ski Resorts. That's
+            why I want you to help make this site as informative impossible, as
+            I want you to provide information that will help other users make
+            an informative decision on where they should go skiing or snowboarding
           </p>
         </div>
       </div>
+
+      <div id="divbreak"></div>
+
+      <div id="form">
+
+        <form method="post" action="https://oim-apis.herokuapp.com/form">
+      <fieldset class="fieldone">
+        <legend><strong>Information:</strong> </legend>
+
+        <div class="space">
+          <label for="Name"> Name:</label>
+          <input
+            type="text"
+            id="Name"
+            name="Name"
+            placeholder="Enter Your Name Here"
+          />
+        </div>
+
+        <div class="space">
+          <label for="Email"> Email:</label>
+          <input
+            type="text"
+            id="Email"
+            name="Email"
+            placeholder="Enter Your Email Here"
+          />
+        </div>
+
+        <div class="space">
+          <label for="family">Group Situation:</label>
+          <select name="groupsituation" id="family">
+            <option value=" ">-- Please Select Option --</option>
+            <option>Family with Children</option>
+            <option>Family without Children</option>
+            <option>Group of Freinds</option>
+            <option>Online</option>
+          </select>
+        </div>
+
+        <div class="space">
+          <label for="start">Trip Start:</label>
+          <input type="date" id="start" name="TripStart">
+
+          <label for="end">Trip End:</label>
+          <input type="date" id="end" name="Tripend">
+
+
+        </div>
+      </fieldset>
+
+      <fieldset class="fieldone">
+        <legend><strong>Resort Information:</strong> </legend>
+
+        <div class="space">
+          <label for="ski"> Name of Ski Resort:</label>
+          <input
+            type="text"
+            id="ski"
+            name="Ski_Resort"
+            placeholder="Enter Your Name Here"
+          />
+        </div>
+
+        <div class="space">
+          <label for="canton">Canton:</label>
+          <select name="Canton" id="canton">
+            <option value=" ">-- Please Select Option --</option>
+            <option>Vallais</option>
+            <option>Vaud</option>
+            <option>Bern</option>
+            <option>Graubünden</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </fieldset>
+
+
+      <fieldset class="fieldone">
+        <legend><strong> Resort Review:</strong></legend>
+
+        <div class="space">
+          <label for="price">Price:</label>
+          <select name="Price" id="price">
+            <option value=" ">-- Please Select Option --</option>
+            <option>1 "Very Expensive"</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5 "Very Cheap"</option>
+          </select>
+        </div>
+
+        <div class="space">
+          <label for="difficulty">Ski Difficulty:</label>
+          <select name="Difficulty" id="difficulty">
+            <option value=" ">-- Please Select Option --</option>
+            <option>1 "Very Difficult"</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5 "Very Easy"</option>
+          </select>
+        </div>
+
+        <div class="space">
+          <label for="assesibility">Journey Difficulty:</label>
+          <select name="Assesibility" id="assesibility">
+            <option value=" ">-- Please Select Option --</option>
+            <option>1 "Very Easy"</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5 "Very Difficult"</option>
+          </select>
+        </div>
+
+        <div class="space">
+          <label for="food">Food Quality:</label>
+          <select name="Food" id="food">
+            <option value=" ">-- Please Select Option --</option>
+            <option>1 "Very Good"</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5 "Very Bad"</option>
+          </select>
+        </div>
+
+        <div class="space">
+          <label for="buzy">Popularity:</label>
+          <select name="Popularity" id="buzy">
+            <option value=" ">-- Please Select Option --</option>
+            <option>1 "Very Busy"</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5 "Not Busy"</option>
+          </select>
+        </div>
+
+        <div class="space">
+          <label for="attribute">Best Attribute:</label>
+          <select name="Attribute" id="attribute">
+            <option value=" ">-- Please Select Option --</option>
+            <option>Night Life</option>
+            <option>Apres Ski</option>
+            <option>Non-Ski Activites</option>
+            <option>Sking</option>
+            <option>Restaurants</option>
+            <option>Shopping</option>
+            <option>Other</option>
+          </select>
+        </div>
+      
+        <div class="space">
+          <label for="comments">Other Notable Information: </label>
+        </div>
+
+        <div class="spacetwo">
+          <textarea id="comments" name="Comments" rows="3" cols="50">
+          </textarea>
+        </div>
+
+
+      <div class="space">
+        <label for="myfile">Submit Photos For Website:</label>
+        <input type="file" id="myfile" name="myfile">
+      </div>
+
+        <div>
+          <input
+            type="checkbox"
+            id="updates"
+            name="Email_List"
+            value="True"
+            checked
+          />
+          <label for="updates"> Sign me up for email updates </label>
+        </div>
+
+        <div id="two">
+          <button type="reset">RESET</button>
+
+          <button type="submit">SUBMIT</button>
+        </div>
+      </fieldset>
+    </form>
+
+
+
+      </div>
     </div>
-
-   
-
-    
 
     <div id="paddingone"></div>
 
@@ -218,4 +437,3 @@
     </div>
   </body>
 </html>
-

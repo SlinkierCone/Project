@@ -6,7 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
     <style>
-      ul {
+      #background {
+        margin-top: 4px;
+        background-image: url(/images/Arosa.png);
+        height: 280px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      ul.header {
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -15,12 +24,12 @@
         background-color: gray;
       }
 
-      li {
+      ul.header li {
         display: inline-block;
         border: 3px solid gray;
       }
 
-      li a {
+      ul.header li a {
         display: block;
         text-align: center;
         padding: 10px 30px;
@@ -42,10 +51,12 @@
       }
       @keyframes ski {
         from {
-          left: 600px;
+          top: 120px;
+          left: 80px;
         }
         to {
-          left: 1200px;
+          top: 1200px;
+          left: 80px;
         }
       }
 
@@ -53,11 +64,117 @@
         position: relative;
         animation: ski 10s infinite;
       }
+
+      ul.footer li a {
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 12px;
+        display: block;
+        text-align: center;
+        padding: 8px 20px;
+        text-decoration: none;
+        border-left: 1px solid grey;
+        border-top: 3px solid lightgray;
+        border-bottom: 3px solid lightgray;
+      }
+
+      ul.footer li {
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 12px;
+        display: inline-block;
+      }
+
+      ul.footer {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        text-align: center;
+        background-color: lightgray;
+        border-top: 1px solid black;
+      }
+
+      #copyright {
+        padding-right: 15px;
+      }
+
+      #paddingone {
+        height: 10px;
+        float: none;
+      }
+
+      div {
+        float: none;
+      }
+
+      #box {
+        margin-right: auto;
+        margin-left: auto;
+        width: 1000px;
+        padding-top: 10px;
+      }
+
+      h3 {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 30px;
+        top: 50px;
+      }
+
+      #headshot {
+        height: 200px;
+        border-radius: 400px;
+        position: relative;
+        left: 130px;
+        top: 30px;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      .whoami {
+        margin-top: 10px;
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid black;
+        text-align: center;
+      }
+
+      .bodyone {
+        font-family: "Courier New", Courier, monospace;
+        line-height: 1.5;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      #photo {
+        width: 800px;
+        height: 600px;
+        border: 1px solid black;
+
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #frameone {
+        float: none;
+        display: block;
+        height: 550px;
+        width: 750px;
+        margin: auto;
+        align-content: center;
+        margin-top: 25px;
+      }
     </style>
   </head>
   <body>
     <div id="headerwidth">
-      <ul>
+      <ul class="header">
         <li id="first"><a href="/index.html">Home</a></li>
         <li><a href="/pagetwo.html">Top Ski Resorts</a></li>
         <li>
@@ -75,13 +192,28 @@
       </ul>
     </div>
 
-    <img
-      src="images/Skier.png"
-      alt="Little Skier"
-      height="30"
-      title="Little Skier"
-      id="skier"
-    />
+    <div id="background">
+      <div id="box">
+        <div class="whoami">
+          <h1>Map of Switzerland</h1>
+
+          <p class="bodyone">
+            This page shows where all my top ski resorts are located in
+            Switzerland and provide the distance of all these resorts from
+            Switzerland's two significant airports (Geneva and Zurich).
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="photo">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797221.230092082!2d5.981405624908435!3d46.79127685704961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c64ef6f596d61%3A0x5c56b5110fcb7b15!2sSwitzerland!5e0!3m2!1sen!2sus!4v1648167473846!5m2!1sen!2sus"
+        id="frameone"
+      ></iframe>
+
+      <!-- The Maps will include location pins of the five top ski resorts that I identify. But apparently that requires javascipt  -->
+    </div>
 
     <div id="paddingone"></div>
 
@@ -97,7 +229,6 @@
         </ul>
       </footer>
     </div>
-
 
   </body>
 </html>
