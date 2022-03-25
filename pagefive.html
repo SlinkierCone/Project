@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index</title>
+    <meta name="author" content="André Henson-Schnee" />
+    <title>Map of Switzerland</title>
     <style>
       #background {
         margin-top: 4px;
-        background-image: url(/images/Arosa.png);
+        background-image: url(/images/arosafive\ copy.jpg);
         height: 280px;
         background-position: center;
         background-repeat: no-repeat;
@@ -39,30 +40,15 @@
       }
 
       #first {
-        background: lightblue;
+        background:lightskyblue;
       }
 
       li:hover {
         border-bottom: 3px solid purple;
       }
 
-      iframe {
-        float: right;
-      }
-      @keyframes ski {
-        from {
-          top: 120px;
-          left: 80px;
-        }
-        to {
-          top: 1200px;
-          left: 80px;
-        }
-      }
-
-      #skier {
-        position: relative;
-        animation: ski 10s infinite;
+      ul.header li:hover {
+        border-bottom: 3px solid purple;
       }
 
       ul.footer li a {
@@ -149,6 +135,7 @@
         line-height: 1.5;
         font-size: 20px;
         text-align: center;
+        color: white
       }
 
       #photo {
@@ -171,11 +158,29 @@
         margin-top: 25px;
       }
     </style>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
   </head>
   <body>
     <div id="headerwidth">
       <ul class="header">
-        <li id="first"><a href="/index.html">Home</a></li>
+        <li><a href="/index.html">Home</a></li>
         <li><a href="/pagetwo.html">Top Ski Resorts</a></li>
         <li>
           <a href="/pagethree.html">Ski Resort Survey</a>
@@ -183,7 +188,7 @@
         <li>
           <a href="/pagefour.html">Gallery</a>
         </li>
-        <li>
+        <li id="first">
           <a href="/pagefive.html">Map of Switzerland</a>
         </li>
         <li>
@@ -210,6 +215,8 @@
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797221.230092082!2d5.981405624908435!3d46.79127685704961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c64ef6f596d61%3A0x5c56b5110fcb7b15!2sSwitzerland!5e0!3m2!1sen!2sus!4v1648167473846!5m2!1sen!2sus"
         id="frameone"
+        alt="Map of Switzerland With Pin Points of My Top 5Locaitons"
+        title="My Top 5 Resorts on a Map"
       ></iframe>
 
       <!-- The Maps will include location pins of the five top ski resorts that I identify. But apparently that requires javascipt  -->
@@ -223,12 +230,10 @@
           <li id="copyright">
             Copyright&copy; 2022 André. All Rights Reservred
           </li>
-          <li><a href="/pagetwo.html">Site Map</a></li>
-          <li><a href="/pagetwo.html">Contact Page</a></li>
-          <li><a href="/pagetwo.html">Social Media</a></li>
+          <li><a href="/sitemap.html">Site Map</a></li>
+          <li><a href="/pagesix.html">Contact Page & Social Media</a></li>
         </ul>
       </footer>
     </div>
-
   </body>
 </html>

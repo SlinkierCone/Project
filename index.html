@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index</title>
+    <meta
+      name="description"
+      content="Helps you find the best ski resorts in Switlzerland, including some hidden gems"
+    />
+    <meta
+      name="keywords"
+      content="Sking,Switzerland,Arosa,Champéry, Zermatt, gems, vallais"
+    />
+    <meta name="author" content="André Henson-Schnee" />
+    <title>Sking In Switzerland</title>
     <style>
       #background {
         margin-top: 4px;
@@ -29,6 +38,10 @@
         border: 3px solid gray;
       }
 
+      ul.header li:hover {
+        border-bottom: 3px solid purple;
+      }
+
       ul.header li a {
         display: block;
         text-align: center;
@@ -39,7 +52,7 @@
       }
 
       #first {
-        background: lightblue;
+        background: lightskyblue;
       }
 
       li:hover {
@@ -48,21 +61,6 @@
 
       iframe {
         float: right;
-      }
-      @keyframes ski {
-        from {
-          top: 120px;
-          left: 80px;
-        }
-        to {
-          top: 1200px;
-          left: 80px;
-        }
-      }
-
-      #skier {
-        position: relative;
-        animation: ski 10s infinite;
       }
 
       ul.footer li a {
@@ -221,6 +219,11 @@
       }
     </style>
 
+    <!-- I realized after that I could have made the footer
+        and header CSS stuff in one external CSS file to make 
+        sure it is the same on the different pages. 
+        You Learn From Mistakes -->
+
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -302,6 +305,8 @@
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87457.41705893775!2d9.594785231522065!3d46.76402358600834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4784bc5588543edd%3A0x524f0c1d5ee1ca28!2s7050%20Arosa%2C%20Switzerland!5e0!3m2!1sen!2sus!4v1648144658046!5m2!1sen!2sus"
         id="frameone"
+        alt="GoogleMaps of Arosa"
+        title="Map Of Arosa"
       ></iframe>
     </div>
 
@@ -346,28 +351,40 @@
       <table>
         <tr>
           <th>#1</th>
-          <th>Arosa</th>
+          <th>
+            <a href="http://127.0.0.1:5500/pagetwo.html#Arosaone">Arosa</a>
+          </th>
         </tr>
 
         <tr>
           <th>#2</th>
-          <th>Champéry</th>
+          <th>
+            <a href="http://127.0.0.1:5500/pagetwo.html#champeryone"
+              >Champéry</a
+            >
+          </th>
         </tr>
 
         <tr>
           <th>#3</th>
-          <th>Zermatt</th>
+          <th>
+            <a href="http://127.0.0.1:5500/pagetwo.html#zermattone">Zermatt</a>
+          </th>
         </tr>
 
-        <tr>
+        <!-- <tr>
           <th>#4</th>
-          <th>Saas Fee</th>
+          <th>
+            <a href="http://127.0.0.1:5500/pagetwo.html#saas">Saas Fee</a>
+          </th>
         </tr>
 
         <tr>
           <th>#5</th>
-          <th>St.Mortiz</th>
-        </tr>
+          <th>
+            <a href="http://127.0.0.1:5500/pagetwo.htmlmortizone">St.Mortiz</a>
+          </th>
+        </tr> -->
       </table>
     </div>
 
@@ -379,9 +396,8 @@
           <li id="copyright">
             Copyright&copy; 2022 André. All Rights Reservred
           </li>
-          <li><a href="/pagetwo.html">Site Map</a></li>
-          <li><a href="/pagetwo.html">Contact Page</a></li>
-          <li><a href="/pagetwo.html">Social Media</a></li>
+          <li><a href="/sitemap.html">Site Map</a></li>
+          <li><a href="/pagesix.html">Contact & Social Media</a></li>
         </ul>
       </footer>
     </div>

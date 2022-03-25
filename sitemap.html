@@ -4,19 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="André Henson-Schnee" />
-    <title>Contact & Social Media</title>
+    <title>Index</title>
     <style>
       #background {
         margin-top: 4px;
-        background-image: url(/images/Arosa.png);
-        height: 280px;
+        background-image: url(/images/champery3.jpg);
+        height: 200px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
       }
-
       ul.header {
         list-style-type: none;
         margin: 0;
@@ -44,7 +42,7 @@
         background: lightskyblue;
       }
 
-      li:hover {
+      ul.footer li:hover {
         border-bottom: 3px solid purple;
       }
 
@@ -80,6 +78,26 @@
         text-align: center;
         background-color: lightgray;
         border-top: 1px solid black;
+      }
+
+      ul.sitemaps {
+        list-style-type: none;
+        margin: 0;
+        padding-top: 5px;
+      }
+      ul.sitemaps li a {
+        text-decoration: none;
+        color: teal;
+      }
+
+      ul.sitemaps li {
+        padding: 3px 0px;
+        text-align: center;
+      }
+
+      .about {
+        color: black;
+        font-weight: bold;
       }
 
       #copyright {
@@ -123,11 +141,10 @@
       }
 
       .whoami {
-        margin-top: 10px;
+        margin-top: 60px;
         width: 800px;
         margin-left: auto;
         margin-right: auto;
-        border: 1px solid black;
         text-align: center;
       }
 
@@ -136,9 +153,10 @@
         line-height: 1.5;
         font-size: 20px;
         text-align: center;
+        color: white;
       }
 
-      #socialmedia {
+      #maps {
         width: 800px;
         height: 150px;
 
@@ -147,59 +165,13 @@
         margin-right: auto;
       }
 
-      #leftsocial {
-        float: left;
-        height: 140px;
-        width: 350px;
-        text-align: right;
-      }
+      #mapsone {
+        width: 800px;
+        height: 60px;
 
-      #rightsocial {
-        float: right;
-        height: 140px;
-        width: 350px;
-        text-align: left;
-      }
-
-      #rightpage {
-        font-weight: bold;
-        text-transform: uppercase;
-      }
-
-      #imgstyle {
-        height: 130px;
-      }
-
-      #imgstyletwo {
-        height: 105px;
-        margin-top: 12px;
-      }
-
-      #feedback {
-        width: 300px;
-        height: 30px;
+        margin-top: 15px;
         margin-left: auto;
         margin-right: auto;
-        text-align: center;
-        border: 1px dashed black;
-      }
-
-      #feed {
-        font-family: "Courier New", Courier, monospace;
-        font-size: 25px;
-      }
-
-      @keyframes ski {
-        from {
-          left: 0px;
-        }
-        to {
-          left: 2000px;
-        }
-      }
-      #skier {
-        position: relative;
-        animation: ski 5s infinite;
       }
     </style>
     <link
@@ -232,10 +204,10 @@
         <li>
           <a href="/pagefour.html">Gallery</a>
         </li>
-        <li>
+        <li id="first">
           <a href="/pagefive.html">Map of Switzerland</a>
         </li>
-        <li id="first">
+        <li>
           <a href="/pagesix.html">Contact</a>
         </li>
       </ul>
@@ -244,42 +216,27 @@
     <div id="background">
       <div id="box">
         <div class="whoami">
-          <h1>Contact Page</h1>
-
-          <p class="bodyone">
-            Are you looking to get in contact with me? Maybe you want to go
-            skiing together, share a story, or provide some feedback?
-            <br /><br />
-            <span id="rightpage"> you are on the right page!</span>
-          </p>
+          <h1>Site Map</h1>
         </div>
       </div>
     </div>
 
-    <div id="socialmedia">
-      <div id="leftsocial">
-        <a href="https://www.instagram.com/andre.hensonschnee/"
-          ><img src="/images/insta.webp" alt="" id="imgstyle" />
-        </a>
-      </div>
-      <div id="rightsocial">
-        <a href="mailto:ahensonschnee1@babson.edu"
-          ><img src="/images/mailbox.png" alt="" id="imgstyletwo" />
-        </a>
-      </div>
+    <div id="maps">
+      <ul class="sitemaps">
+        <li class="about">General Website Links</li>
+        <li><a href="/index.html">Home Page</a></li>
+        <li><a href="/pagetwo.html">Top Ski Resorts</a></li>
+        <li><a href="/pagethree.html">Ski Resort Survey</a></li>
+        <li><a href="/pagefour.html">Gallery</a></li>
+        <li><a href="/pagefive.html">Map of Switzerland</a></li>
+      </ul>
     </div>
-
-    <div id="feedback">
-      <a href="/feedbackform.html" id="feed">Feedback Form</a>
+    <div id="mapsone">
+      <ul class="sitemaps">
+        <li class="about">Extra Links</li>
+        <li><a href="/feedbackform.html">Feedback Form</a></li>
+      </ul>
     </div>
-
-    <img
-      src="images/Skier.png"
-      alt="Little Skier"
-      height="80px"
-      title="Little Skier"
-      id="skier"
-    />
 
     <div id="paddingone"></div>
 

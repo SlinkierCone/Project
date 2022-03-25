@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index</title>
+    <meta
+      name="description"
+      content="Break down the top five ski resorts in Switzerland from a insiders perspective"
+    />
+    <meta
+      name="keywords"
+      content="Sking,Switzerland,Arosa,Champéry, Zermatt"
+    />
+    <meta name="author" content="André Henson-Schnee" />
+    <title>Top Three Ski Resorts in SW</title>
     <style>
       #background {
         margin-top: 4px;
@@ -38,17 +47,16 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
 
-      #first {
-        background: lightblue;
+      #currentpage {
+        background:lightskyblue;
       }
 
       li:hover {
         border-bottom: 3px solid purple;
       }
 
-      #skier {
-        position: relative;
-        animation: ski 10s infinite;
+      ul.header li:hover {
+        border-bottom: 3px solid purple;
       }
 
       ul.footer li a {
@@ -156,7 +164,7 @@
 
       .arosabodyone {
         border: 1px solid black;
-        height: 400px;
+        height: 405px;
         width: 395px;
         float: right;
         margin-top: 5px;
@@ -164,7 +172,7 @@
 
       .arosabodytwo {
         border: 1px solid black;
-        height: 400px;
+        height: 405px;
         width: 395px;
         float: left;
         margin-top: 5px;
@@ -175,7 +183,7 @@
         width: 800px;
         margin-left: auto;
         margin-right: auto;
-        height: 490px;
+        height: 510px;
       }
 
       .arosathree {
@@ -210,12 +218,30 @@
         text-decoration: underline;
       }
     </style>
+        <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/images/apple-touch-icon.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/images/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/images/favicon-16x16.png"
+      />
+      <link rel="manifest" href="images/site.webmanifest" />
   </head>
   <body>
     <div id="headerwidth">
       <ul class="header">
-        <li id="first"><a href="/index.html">Home</a></li>
-        <li><a href="/pagetwo.html">Top Ski Resorts</a></li>
+        <li><a href="/index.html">Home</a></li>
+        <li id="currentpage"><a href="/pagetwo.html">Top Ski Resorts</a></li>
         <li>
           <a href="/pagethree.html">Ski Resort Survey</a>
         </li>
@@ -234,7 +260,7 @@
     <div id="background">
       <div id="box">
         <div class="whoami">
-          <h1>My Current Top 5 Ski Resorts In Switerland!</h1>
+          <h1>My Current Top 3 Ski Resorts In Switerland!</h1>
 
           <p class="headingone">
             This part of the website will break down my favorite ski resorts in
@@ -250,9 +276,9 @@
       </div>
 
       <div class="arosabodytwo">
-        <div><img src="/images/Arosa3.jpeg" alt="" class="arosathree" /></div>
+        <div><img src="/images/Arosa3.jpeg" alt="Night shot of Arosa" title="Arosa Village At Night" class="arosathree" /></div>
         <div class="insidephoto">
-          <div>Arosa in Lezerheide, Switzerland</div>
+          <div id="arosaone">Arosa in Lezerheide, Switzerland</div>
 
           <div class="tableone"></div>
 
@@ -316,10 +342,10 @@
 
       <div class="arosabodytwo">
         <div>
-          <img src="/images/Champery1.webp" alt="" class="arosathree" />
+          <img src="/images/Champery1.webp" alt="Photo Of Champery Ski Resort" title="Champery Ski Resort" class="arosathree" />
         </div>
         <div class="insidephoto">
-          <div>Champéry in Vallais, Switzerland</div>
+          <div id="champeryone">Champéry in Vallais, Switzerland</div>
 
           <div class="tableone"></div>
 
@@ -385,10 +411,10 @@
 
       <div class="arosabodytwo">
         <div>
-          <img src="/images/Zermatt2.jpeg" alt="" class="arosathree" />
+          <img src="/images/Zermatt2.jpeg" alt="Zermatt Evening Photo with Matterhorn" title="Zermatt Village" class="arosathree" />
         </div>
         <div class="insidephoto">
-          <div>Zermatt in Vallais, Switzerland</div>
+          <div id="zermattone">Zermatt in Vallais, Switzerland</div>
 
           <div class="tableone"></div>
 
@@ -456,9 +482,8 @@
           <li id="copyright">
             Copyright&copy; 2022 André. All Rights Reservred
           </li>
-          <li><a href="/pagetwo.html">Site Map</a></li>
-          <li><a href="/pagetwo.html">Contact Page</a></li>
-          <li><a href="/pagetwo.html">Social Media</a></li>
+          <li><a href="/sitemap.html">Site Map</a></li>
+          <li><a href="/pagesix.html">Contact & Social Media</a></li>
         </ul>
       </footer>
     </div>
