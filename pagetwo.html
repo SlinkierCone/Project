@@ -275,10 +275,11 @@
       <div class="arosabodytwo">
         <div>
           <img
-            src="/images/Arosa3.jpeg"
+            src="images/Arosa/arosa2.jpeg"
             alt="Night shot of Arosa"
             title="Arosa Village At Night"
             class="arosathree"
+            id="arosaimg"
           />
         </div>
         <div class="insidephoto">
@@ -502,5 +503,20 @@
         </ul>
       </footer>
     </div>
+
+    <script>
+      const arosaimgone = document.getElementById("arosaimg");
+
+      function fone() {
+        arosaimgone.src = "images/Arosa/arosa1.jpeg";
+      }
+
+      function ftwo() {
+        arosaimgone.src = "images/Arosa/arosa2.jpeg";
+      }
+
+      document.getElementById("arosaimg").onmouseover = fone;
+      document.getElementById("arosaimg").onmouseout = ftwo;
+    </script>
   </body>
 </html>

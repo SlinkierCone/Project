@@ -257,7 +257,7 @@
     <div id="photoone">
       <div id="photo">
         <img
-          src="/images//arosafive.jpg"
+          src="/images/Arosa3.jpeg"
           alt="Photo From User Ski Gallery "
           title="Latest User Photos"
           id="galleryone"
@@ -288,13 +288,48 @@
       </footer>
     </div>
 
+   
+
     <script>
+
+      let description = ["PlaceHolder", "Champery, Switzerland", "Arosa, Switzerland","Arosa, Switzerland", "Killington, USA", "Gstaad, Switzerland", "Arosa, Switzerland", "Arosa, Switzerland", "Arosa, Switzerland", "Tagerwilan, Switzerland" ]
+
+
+
+      let imgnumber = 0
+      const gallery = document.getElementById("galleryone")
+      const descriptionone = document.getElementById("location")
+
+      function slideshow(){
+        if(imgnumber <= 8){
+          imgnumber = imgnumber + 1
+          gallery.src = "images/SkiPhotos/"+"ski"+imgnumber+".jpg"
+          descriptionone.innerText = description[imgnumber]
+        }
+
+        else{imgnumber = 1}
+      setTimeout(slideshow, 5000)
+      }
+
+
       function next() {
-        document.getElementById("galleryone").src = "/images/andretwo.jpg";
+        if(imgnumber <= 8){
+          imgnumber = imgnumber + 1
+          gallery.src = "images/SkiPhotos/"+"ski"+imgnumber+".jpg"
+          descriptionone.innerText = description[imgnumber]
+        }
+
+        else{imgnumber = 0}
       }
 
       function previous() {
-        document.getElementById("galleryone").src = "/images//arosafive.jpg";
+        if(imgnumber > 1){
+          imgnumber = imgnumber + -1
+          gallery.src = "images/SkiPhotos/"+"ski"+imgnumber+".jpg"
+          descriptionone.innerText = description[imgnumber]
+        }
+
+        else{imgnumber = 8}
       }
 
       document.getElementById("buttonright").onclick = function () {
@@ -303,6 +338,9 @@
       document.getElementById("buttonleft").onclick = function () {
         previous("galleryone");
       };
+
+      // document.querySelector("body").onload = slideshow;
+
       // Need to make this a full gallery the text will also change, but these photos are the same location
     </script>
   </body>
