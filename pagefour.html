@@ -291,7 +291,7 @@
       </div>
       <div id="photo">
         <img
-          src="/images/champery3.jpg"
+          src="/images/Arosa/Champery1.jpeg"
           alt="Photo From User Ski Gallery "
           title="Latest User Photos"
           id="galleryone"
@@ -325,6 +325,7 @@
       const descriptionone = document.getElementById("location")
 
       function slideshow(){
+        console.log("starting repeat...")
         if(imgnumber <= 8){
           imgnumber = imgnumber + 1
           gallery.src = "images/SkiPhotos/"+"ski"+imgnumber+".jpg"
@@ -332,7 +333,7 @@
         }
 
         else{imgnumber = 1}
-      setTimeout(slideshow, 5000)
+        setTimeout(slideshow, 50)
       }
 
 
@@ -356,15 +357,15 @@
         else{imgnumber = 8}
       }
 
-      document.getElementById("buttonright").onclick = function () {
-        next("galleryone");
-      };
-      document.getElementById("buttonleft").onclick = function () {
-        previous("galleryone");
+      document.querySelector("body").onclick = function () {
+        slideshow();
       };
 
-      document.querySelector("body").onload = function () {
-        previous("galleryone");
+      document.getElementById("buttonright").onclick = function () {
+        next();
+      };
+      document.getElementById("buttonleft").onclick = function () {
+        previous();
       };
 
 
