@@ -193,6 +193,7 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
+        font-size: 25px;
       }
 
       @media only screen and (max-width: 600px) {
@@ -217,6 +218,7 @@
         
         #location {
           width: 70%;
+          font-size: 20px
         }
         
       }
@@ -289,7 +291,7 @@
       </div>
       <div id="photo">
         <img
-          src="/images/Arosa3.jpeg"
+          src="/images/champery3.jpg"
           alt="Photo From User Ski Gallery "
           title="Latest User Photos"
           id="galleryone"
@@ -361,9 +363,11 @@
         previous("galleryone");
       };
 
-      // document.querySelector("body").onload = slideshow;
+      document.querySelector("body").onload = function () {
+        previous("galleryone");
+      };
 
-      // Need to make this a full gallery the text will also change, but these photos are the same location
+
     </script>
   </body>
 </html>

@@ -228,7 +228,12 @@
       <div id="divbreak"></div>
 
       <div id="form">
-        <form method="post" action="https://oim-apis.herokuapp.com/form">
+        <form
+          method="post"
+          action="https://oim-apis.herokuapp.com/form"
+          id="formone"
+          onsubmit="return validateForm()"
+        >
           <fieldset class="fieldone">
             <legend><strong>Information:</strong></legend>
 
@@ -260,7 +265,7 @@
 
             <div class="space">
               <label for="helpful">Did You Find This Website Useful:</label>
-              <select name="Helpful" id="helpful" required="required">
+              <select name="helpful" id="helpful" required="required">
                 <option value=" ">-- Please Select Option --</option>
                 <option>1 "Very Useful"</option>
                 <option>2</option>
@@ -317,7 +322,7 @@
             <div id="two">
               <button type="reset" class="buttonsize">RESET</button>
 
-              <button type="submit" class="buttonsize">SUBMIT</button>
+              <button type="submit" class="buttonsize" id="sub">SUBMIT</button>
             </div>
           </fieldset>
         </form>
@@ -338,5 +343,19 @@
         </ul>
       </footer>
     </div>
+
+    <script>
+
+      function validateForm() {
+        const x = document.getElementById("formone");
+        if(x["Email"].value ==="" || x["Name"].value===""){
+          alert("MISSING INFORMATION")
+          return false
+        }
+        
+      }
+      
+      document.getElementById("sub").onclick = validateForm;
+    </script>
   </body>
 </html>
