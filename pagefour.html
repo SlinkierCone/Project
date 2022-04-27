@@ -105,7 +105,7 @@
       #box {
         margin-right: auto;
         margin-left: auto;
-        width: 1000px;
+        width: 65%;
         padding-top: 10px;
       }
 
@@ -131,7 +131,7 @@
 
       .whoami {
         margin-top: 10px;
-        width: 800px;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         border: 1px solid black;
@@ -146,8 +146,8 @@
       }
 
       #photo {
-        width: 800px;
-        height: 600px;
+        width: 65%;
+        height: auto;
 
         margin-top: 10px;
         margin-left: auto;
@@ -155,23 +155,19 @@
       }
 
       #photoone {
-        width: 800px;
-        height: 685px;
+        width: 65%;
+        height: auto;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
       }
 
       #buttonleft {
-        margin-top: 10px;
         float: left;
-        width: 395px;
         height: 30px;
       }
       #buttonright {
-        margin-top: 10px;
         float: right;
-        width: 395px;
         height: 30px;
       }
 
@@ -182,23 +178,49 @@
         font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
           sans-serif;
         position: relative;
-        top: -40px;
       }
 
       #galleryone {
-        height: 590px;
+        width: 100%;
         margin-top: 5px;
       }
 
       #location {
-        width: 200px;
+        width: 40%;
         height: 50px;
-        border: 2px dashed black;
         font-family: "Courier New", Courier, monospace;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 20px;
       }
+
+      @media only screen and (max-width: 600px) {
+        .whoami {
+          width: 90%;
+          font-size: 8px;
+        }
+
+        #who {
+          width: 80%;
+        }
+
+        #box {
+          width: 100%;
+        }
+        #photone {
+          width: 90%;
+        }
+        #photo {
+          width: 90%;
+        }
+        
+        #location {
+          width: 70%;
+        }
+        
+      }
+
     </style>
     <link
       rel="apple-touch-icon"
@@ -255,14 +277,6 @@
     </div>
 
     <div id="photoone">
-      <div id="photo">
-        <img
-          src="/images/Arosa3.jpeg"
-          alt="Photo From User Ski Gallery "
-          title="Latest User Photos"
-          id="galleryone"
-        />
-      </div>
       <div id="location">
         <p>Arosa, Switzerland</p>
       </div>
@@ -272,7 +286,16 @@
       <div id="buttonright">
         <button type="button">Next Photo</button>
       </div>
-    </div>
+      </div>
+      <div id="photo">
+        <img
+          src="/images/Arosa3.jpeg"
+          alt="Photo From User Ski Gallery "
+          title="Latest User Photos"
+          id="galleryone"
+        />
+      </div>
+    
 
     <div id="paddingone"></div>
 
@@ -288,7 +311,6 @@
       </footer>
     </div>
 
-   
 
     <script>
 
