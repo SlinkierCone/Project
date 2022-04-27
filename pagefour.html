@@ -333,9 +333,8 @@
         }
 
         else{imgnumber = 1}
-        setTimeout(slideshow, 50)
+        setTimeout(slideshow, 5000)
       }
-
 
       function next() {
         if(imgnumber <= 8){
@@ -357,7 +356,7 @@
         else{imgnumber = 8}
       }
 
-      document.querySelector("body").onclick = function () {
+      document.querySelector("body").onload = function () {
         slideshow();
       };
 
