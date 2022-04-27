@@ -220,7 +220,7 @@
           width: 90%;
           margin-left: auto;
           margin-right: auto;
-          height: 900px
+          height: 900px;
         }
 
         .insidephoto {
@@ -248,24 +248,21 @@
         }
 
         .whoami {
-        margin-top: 10px;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        border: 1px solid black;
-        text-align: center;
-      }
+          margin-top: 10px;
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          border: 1px solid black;
+          text-align: center;
+        }
 
-      #box {
-        margin-right: auto;
-        margin-left: auto;
-        width: 90%;
-        padding-top: 10px;
-        font-size: 10px;
-      }
-
-      
-      
+        #box {
+          margin-right: auto;
+          margin-left: auto;
+          width: 90%;
+          padding-top: 10px;
+          font-size: 10px;
+        }
       }
     </style>
     <link
@@ -332,7 +329,7 @@
             alt="Night shot of Arosa"
             title="Arosa Village At Night"
             class="arosathree"
-            id="arosaimg"
+            id="arosa"
           />
         </div>
         <div class="insidephoto">
@@ -402,10 +399,11 @@
       <div class="arosabodytwo">
         <div>
           <img
-            src="/images/Champery1.webp"
+            src="/images/Arosa/Champery2.jpeg"
             alt="Photo Of Champery Ski Resort"
             title="Champery Ski Resort"
             class="arosathree"
+            id="Champery"
           />
         </div>
         <div class="insidephoto">
@@ -476,10 +474,11 @@
       <div class="arosabodytwo">
         <div>
           <img
-            src="/images/Zermatt1.jpeg"
+            src="/images/Arosa/Zermatt2.jpeg"
             alt="Zermatt Evening Photo with the Matterhorn"
             title="Zermatt Village"
             class="arosathree"
+            id="Zermatt"
           />
         </div>
         <div class="insidephoto">
@@ -560,16 +559,27 @@
     <script>
       const arosaimgone = document.getElementById("arosaimg");
 
-      function fone() {
-        arosaimgone.src = "images/Arosa/arosa1.jpeg";
+      let baseURL = "/images/Arosa/";
+
+      function turnBack(imageID) {
+        console.log(imageID);
+        document.getElementById(imageID).src = baseURL + imageID + "1.jpeg";
       }
 
-      function ftwo() {
-        arosaimgone.src = "images/Arosa/arosa2.jpeg";
+      function turnFront(imageID) {
+        console.log(imageID);
+        document.getElementById(imageID).src = baseURL + imageID + "2.jpeg";
       }
 
-      document.getElementById("arosaimg").onmouseover = fone;
-      document.getElementById("arosaimg").onmouseout = ftwo;
+      const images = document.querySelectorAll("img");
+      images.forEach((image) => {
+        image.addEventListener("mouseover", function () {
+          turnBack(this.id);
+        });
+        image.addEventListener("mouseout", function () {
+          turnFront(this.id);
+        });
+      });
     </script>
   </body>
 </html>

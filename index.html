@@ -342,7 +342,7 @@
     /> -->
 
     <div id="darkmode">
-      <button type="button" id="buttonone">Dark Mode</button>
+      <button type="button" id="buttonone">Dark Mode On/Off</button>
     </div>
 
     <div id="currentlocation">
@@ -457,8 +457,10 @@
 
     <script>
       const wholebody = document.querySelector("body");
+      let check = 0
 
       function f() {
+        if(check ===0){
         wholebody.style.backgroundColor = "Black";
         wholebody.style.color = "White";
         let divs = document.querySelectorAll("div");
@@ -468,6 +470,21 @@
         let thr = document.querySelectorAll("th");
         for (i = 0; i < thr.length; i++) {
           thr[i].style.borderColor = "white";
+        }
+        check = 1
+        }
+        else{
+          wholebody.style.backgroundColor = "White";
+        wholebody.style.color = "Black";
+        let divs = document.querySelectorAll("div");
+        for (i = 0; i < divs.length; i++) {
+          divs[i].style.borderColor = "Black";
+        }
+        let thr = document.querySelectorAll("th");
+        for (i = 0; i < thr.length; i++) {
+          thr[i].style.borderColor = "Black";
+        }
+        check = 0
         }
       }
 
